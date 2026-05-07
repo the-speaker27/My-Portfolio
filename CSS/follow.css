@@ -1,0 +1,182 @@
+/* BACKGROUND WITH DEPTH */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #1e293b, #020617 70%);
+    color: white;
+}
+
+/* PERFECT CENTERING */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CARD */
+.profile-card {
+    width: 360px;
+    padding: 30px;
+    border-radius: 24px;
+
+    background: rgba(30, 41, 59, 0.55);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+
+    transition: 0.4s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px) scale(1.01);
+}
+
+/* TOP */
+.profile-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+/* IMAGE (FIXED SIZE + BETTER LOOK) */
+.profile-top img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid transparent;
+    background: linear-gradient(#0f172a, #0f172a) padding-box,
+        linear-gradient(135deg, #38bdf8, #6366f1) border-box;
+}
+
+/* TEXT */
+.profile-info h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profile-info p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* STATS (ADDED FOR PROFESSIONAL LOOK) */
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 25px;
+    text-align: center;
+}
+
+.profile-stats h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.profile-stats p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* BUTTON */
+.follow-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 50px;
+
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.follow-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(99, 102, 241, 0.4);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #38bdf8;
+}
+
+.sections {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    transition: 5s;
+}
+
+.sections a {
+    text-decoration: none;
+    position: relative;
+    color: #94a3b8;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    outline: none;
+}
+
+.sections a:hover {
+    color: #38bdf8;
+}
+
+.sections a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+.sections a:hover::after {
+    width: 100%;
+}
+
+.sections a:hover::after {
+    width: 100%;
+}
+
+.sections button {
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sections button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
